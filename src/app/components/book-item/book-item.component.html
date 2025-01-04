@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Book List</h2>
+  <div class="card" *ngFor="let book of books">
+    <img src="{{ book.bookPic }}" />
+    <div class="card__details">
+      <h3 (click)="addToWishlist(book)">{{ book.bookName }}</h3>
+      <p><b> Publisher : </b>{{ book.publisher }}</p>
+      <p><b> Published on : </b>{{ book.publishDate }}</p>
+      <p><b> Description : </b>{{ book.description | slice : 0 : 100 }}...</p>
+    </div>
+  </div>
+</div>

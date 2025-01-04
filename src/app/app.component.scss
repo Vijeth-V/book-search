@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+app-book-list {
+  width: 55%;
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+
+app-wishlist {
+  width: 45%;
+  border: 1px solid #ddd;
+  padding: 16px;
+}

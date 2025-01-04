@@ -1,0 +1,7 @@
+<h2>Wishlist</h2>
+<ul>
+  <li *ngFor="let item of wishlist; let i = index">
+    {{ item }}
+    <button (click)="deleteItem(i)">Delete</button>
+  </li>
+</ul>
